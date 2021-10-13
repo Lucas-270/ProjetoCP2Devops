@@ -11,6 +11,7 @@
 	<groupId>br.com.fiap</groupId>
 	<artifactId>epictask</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>epictask</name>
 	<description>App para controle de tarefas gamificado</description>
 	<properties>
@@ -106,7 +107,11 @@
 		    <groupId>org.thymeleaf.extras</groupId>
 		    <artifactId>thymeleaf-extras-springsecurity5</artifactId>
 		</dependency>
-		
+		<dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                    <scope>provided</scope>
+        	</dependency>
 	</dependencies>
 
 	<build>
