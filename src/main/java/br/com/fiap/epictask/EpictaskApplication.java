@@ -12,10 +12,15 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 @EnableCaching
 @EnableSwagger2
-public class EpictaskApplication {
+public class EpictaskApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EpictaskApplication.class, args);
 	}
+	
+	@Override
+    	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+            return application.sources(EpictaskApplication.class);
+    	}
 
 }
