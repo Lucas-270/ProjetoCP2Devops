@@ -6,6 +6,9 @@ import org.springframework.cache.annotation.EnableCaching;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
 @SpringBootApplication
 @EnableCaching
 @EnableSwagger2
